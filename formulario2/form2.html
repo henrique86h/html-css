@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 2</title>
+    <link rel="stylesheet" href="form2.css">
 </head>
 <body>
     <form action="/pagina2" method="post">
@@ -57,12 +58,13 @@
         <!-- para garantir que apenas uma opção seja selecionada, você deve garantir que todos os botões de rádio pertençam ao mesmo grupo e tenham o mesmo valor(ou a mesma coisa escrita) para o atributo "name". --> 
 
         <p>Grau de Estudo</p>
+        <div class="radio">
         <input type="radio" id="medio" name="grau" value="Ensino Médio">
         <label for="medio">Ensino Médio</label><br>
         <input type="radio" id="faculdade" name="grau" value="Ensino superior">
-        <label for="faculdade">Ensino Superior</label>
+        <label for="faculdade">Ensino Superior</label><br>
         <input type="radio" id="mestrado" name="grau" value="Mestrado">
-        <label for="mestrado">Mestrado</label>
+        <label for="mestrado">Mestrado</label><br>
     </div>
     <div>
         <label for="msg">Mensagem:</label>
