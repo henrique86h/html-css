@@ -1,3 +1,49 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
 .botao {
     border: 1px solid #999;
     height: 26px;
@@ -27,4 +73,60 @@
     background-color: olive;
     padding: 0 50px;
     width: 1000px;
+}
+.faixa {
+    border: 1px solid #000;
+    height: 100px;
+    margin: 40px auto;
+    width: 400px;
+}
+.faixa h1 {
+    background-color: #990000;
+    color: #fff;
+    font-size: 1.2em;
+    left: -10px;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    width: 416px;
+    margin-top: 13px;
+}
+.faixa h1::before {
+    border-color: transparent #7c0000 #7c0000 transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -10px;
+}
+.faixa h1::after {
+    border-color: transparent transparent #7c0000 #7c0000;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    right: 1px;
+    position: absolute;
+    top: -10px;
+}
+.ajuda {
+    background-color: #f1efe6;
+    border: 1px solid #d3cdae;
+    font-size: 0.9em;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ajuda::before {
+    border-color: transparent #d3cdae transparent transparent;
+    border-style: solid;
+    border-width: 14px;
+    content: "";
+    left: -28px;
+    margin-top: -14px;
+    position: absolute;
+    top: 50%;
 }
