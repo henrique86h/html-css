@@ -1,0 +1,9 @@
+.dica::before {
+    content: "\261e";
+    margin-right: 10px;
+}
+blockquote {
+    margin: 20px;
+    color: #444;
+    font-style: italic;
+}
